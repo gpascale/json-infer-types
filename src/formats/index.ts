@@ -135,3 +135,5 @@ export function inferIntFormat(value: number): JSONIntFormat | undefined {
 
   return undefined;
 }
+
+export { inferDatetime } from "./datetime";

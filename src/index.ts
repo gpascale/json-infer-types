@@ -23,6 +23,7 @@ export {
   JSONEmojiFormat,
   JSONSemverFormat,
   JSONJWTStringFormat,
+  inferDatetime,
 } from "./formats";
 export {
   JSONNullType,

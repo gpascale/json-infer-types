@@ -27,6 +27,7 @@
     "test:badges": "npm t && jest-coverage-badges --output ./badges",
     "build": "rollup -c",
     "build:watch": "tsc --watch",
+    "prepare": "npm run clean && npm run check-types && npm run build",
     "prepublishOnly": "npm run clean && npm run check-types && npm run format:check && npm run lint && npm test && npm run build && npm run test:node",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix",
